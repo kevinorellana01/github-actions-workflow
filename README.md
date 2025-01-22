@@ -33,24 +33,25 @@ In this hands-on tutorial, we will:
 Clone the repository to your local machine using the following command:
 ```bash
 git clone git@github.com:<your-github-username>/<repository-name>.git
-
+```
 ### Step 3: Create a Folder and File for Your Workflow
 Inside the cloned repository:
 
-Create a new folder named .github/workflows.
-Inside the workflows folder, create a file named main.yaml.
+- Create a new folder named `.github/workflows`.
+- Inside the `workflows` folder, create a file named `main.yaml`.
 
 ### Step 4: Define Your GitHub Actions Workflow
-GitHub Actions workflows are defined using YAML files. In main.yaml, define the structure of the workflow:
+GitHub Actions workflows are defined using YAML files. In `main.yaml`, define the structure of the workflow:
 
-Name: A descriptive name for the workflow.
-Trigger event: Specify the event that will trigger the workflow (e.g., push, pull_request).
-Jobs: Define one or more jobs with unique names.
-Runner: Specify the execution environment (e.g., ubuntu-latest).
-Steps: Define the individual steps for the job.
-yaml
-Copy
-Edit
+- **Name**: A descriptive name for the workflow.
+- **Trigger event**: Specify the event that will trigger the workflow (e.g., push, pull_request).
+- **Jobs**: Define one or more jobs with unique names.
+- **Runner**: Specify the execution environment (e.g., `ubuntu-latest`).
+- **Steps**: Define the individual steps for the job.
+
+Here’s an example of what `main.yaml` could look like:
+
+```yaml
 name: My First GitHub Actions Workflow
 
 on:
@@ -66,35 +67,29 @@ jobs:
         uses: actions/checkout@v2
       - name: Display message
         run: echo "Hello, my workflow"
-
+```
 ### Step 5: Make a Change to Trigger the Workflow
 To trigger the workflow, edit the README.md file and add the line:
-
-perl
-Copy
-Edit
+```bash
 Hello, my workflow
-This change will activate the workflow defined in main.yaml due to the push event.
-
-Step 6: Commit and Push Your Changes to GitHub
+```
+### Step 6: Commit and Push Your Changes to GitHub
 Use the following commands to commit and push the changes:
-
-bash
-Copy
-Edit
+```bash
 git add .
 git status
 git commit -m "message created"
 git push
-Step 7: View Your Workflow in GitHub
+```
+### Step 7: View Your Workflow in GitHub
 Go to your GitHub repository.
 Click on the "Actions" tab.
 You will see the workflow listed, with details of each run and any log messages related to the run.
-Commands Used
+### Commands Used
 git clone git@github.com:<your-github-username>/<repository-name>.git
 git add .
 git status
 git commit -m "message created"
 git push
-GitHub Actions Workflow
+### GitHub Actions Workflow
 This repository contains a simple GitHub Actions workflow, triggered by a push event. You can monitor the execution of the workflow and check its results under the "Actions" tab in the repository.
