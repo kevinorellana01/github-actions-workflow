@@ -82,14 +82,14 @@ git commit -m "message created"
 git push
 ```
 ### Step 7: View Your Workflow in GitHub
-Go to your GitHub repository.
-Click on the "Actions" tab.
-You will see the workflow listed, with details of each run and any log messages related to the run.
+- Go to your GitHub repository.
+- Click on the "Actions" tab.
+- You will see the workflow listed, with details of each run and any log messages related to the run.
 ### Commands Used
-git clone git@github.com:<your-github-username>/<repository-name>.git
-git add .
-git status
-git commit -m "message created"
-git push
+- git clone git@github.com:<your-github-username>/<repository-name>.git
+- git add .
+- git status
+- git commit -m "message created"
+- git push
 ### GitHub Actions Workflow
 This repository contains a simple GitHub Actions workflow, triggered by a push event. You can monitor the execution of the workflow and check its results under the "Actions" tab in the repository.
