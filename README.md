@@ -1,5 +1,4 @@
-# GitHub Actions Workflow (Hands-On)
-
+# GitHub Actions Workflow 
 This project demonstrates how to set up and use GitHub Actions for automating workflows. We will walk through the steps of creating a simple GitHub Actions workflow that gets triggered by a push event, and displays a message in the Actions tab of GitHub.
 
 ## Table of Contents
