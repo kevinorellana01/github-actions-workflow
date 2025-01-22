@@ -29,16 +29,22 @@ In this hands-on tutorial, we will:
 - Create a new repository on GitHub and ensure to add a README.md file during the setup.
 - The repository will be used to store the code for the workflow.
 
+![image](https://github.com/user-attachments/assets/3262e36a-7458-46a5-b85a-c9e1168f7d59)
+
 ### Step 2: Clone the Repository to Your Local Machine
 Clone the repository to your local machine using the following command:
 ```bash
 git clone git@github.com:<your-github-username>/<repository-name>.git
 ```
+![image](https://github.com/user-attachments/assets/2b585730-e7fd-407e-be2f-b592ae2d7051)
+
 ### Step 3: Create a Folder and File for Your Workflow
 Inside the cloned repository:
 
 - Create a new folder named `.github/workflows`.
 - Inside the `workflows` folder, create a file named `main.yaml`.
+
+![image](https://github.com/user-attachments/assets/65a9ba19-a113-4535-a70d-3bc404a347a0)
 
 ### Step 4: Define Your GitHub Actions Workflow
 GitHub Actions workflows are defined using YAML files. In `main.yaml`, define the structure of the workflow:
@@ -68,11 +74,17 @@ jobs:
       - name: Display message
         run: echo "Hello, my workflow"
 ```
+
+![image](https://github.com/user-attachments/assets/c89ceb6f-211c-45ce-9353-df223f876ded)
+
 ### Step 5: Make a Change to Trigger the Workflow
 To trigger the workflow, edit the README.md file and add the line:
 ```bash
 Hello, my workflow
 ```
+
+![image](https://github.com/user-attachments/assets/0e5f34f0-f8e2-4c33-920f-e931adbdb45c)
+
 ### Step 6: Commit and Push Your Changes to GitHub
 Use the following commands to commit and push the changes:
 ```bash
@@ -81,10 +93,16 @@ git status
 git commit -m "message created"
 git push
 ```
+
+![image](https://github.com/user-attachments/assets/121cab6e-d24b-4bcf-8325-5bce8340e6b3)
+
 ### Step 7: View Your Workflow in GitHub
 - Go to your GitHub repository.
 - Click on the "Actions" tab.
 - You will see the workflow listed, with details of each run and any log messages related to the run.
+
+![image](https://github.com/user-attachments/assets/df67f8f3-e54a-4f37-8064-125e1b42bfe5)
+
 ### Commands Used
 - git clone git@github.com:<your-github-username>/<repository-name>.git
 - git add .
