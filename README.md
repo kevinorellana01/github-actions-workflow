@@ -34,12 +34,13 @@ Clone the repository to your local machine using the following command:
 ```bash
 git clone git@github.com:<your-github-username>/<repository-name>.git
 
-Step 3: Create a Folder and File for Your Workflow
+### Step 3: Create a Folder and File for Your Workflow
 Inside the cloned repository:
 
 Create a new folder named .github/workflows.
 Inside the workflows folder, create a file named main.yaml.
-Step 4: Define Your GitHub Actions Workflow
+
+### Step 4: Define Your GitHub Actions Workflow
 GitHub Actions workflows are defined using YAML files. In main.yaml, define the structure of the workflow:
 
 Name: A descriptive name for the workflow.
@@ -65,7 +66,8 @@ jobs:
         uses: actions/checkout@v2
       - name: Display message
         run: echo "Hello, my workflow"
-Step 5: Make a Change to Trigger the Workflow
+
+### Step 5: Make a Change to Trigger the Workflow
 To trigger the workflow, edit the README.md file and add the line:
 
 perl
